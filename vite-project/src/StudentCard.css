@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.main-heading {
+  text-align: center;
+  color: #1a73e8;
+  font-size: 55px;
+  margin-top: 20px;
+}
+
+.sub-heading {
+  text-align: center;
+  color: gray;
+  margin-top: 10px;
+}
+
+.student-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.student-card {
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  width: 220px;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.student-card h2 {
+  color: #333;
+}

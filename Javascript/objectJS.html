@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student={
+        name:"abhay",
+        age:18,
+            isMarried:false,
+            address:{
+                streetno:42,
+                area:"azm",
+                city:"tbt",
+                pincode:232323
+            },
+            course:"Btech",
+            branch:"CSE",
+            year:2026,
+            getInfo:function(){
+                return " my education detail is"+ student.branch +student.address;
+            },
+            subjects:["maths","hindi","english","science"],
+            examdone:null
+
+    
+    };
+    console.log(student.address.pincode);//object
+    console.log(student.getInfo());//function
+    console.log(student.subjects[2]);//array
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var data type</title>
+</head>
+<body>
+    <script>
+        // JS data value type in JS
+        // Primitive single value variables which are immutable
+        //String,Number,boolen,undefined null bigInt ,Symbol
+        var myName ="Himanshu";
+        console.log(myName);
+console.log(typeof(myName));
+ //number
+ var myPhone =8400339464;
+ console.log(myPhone);
+console.log(typeof(myPhone));
+ //boolean
+ var isMarried =false;
+ console.log(myName+" "+"isMarried "+isMarried);
+console.log(typeof(isMarried));
+//null
+var myAddress =null;
+ console.log(myAddress);
+console.log(typeof(myAddress));
+//BigInt
+var myValue =BigInt(8400333253455656756756756);
+ console.log(myValue);
+console.log(typeof(myValue));
+//symbol
+var name1 =Symbol("Himanshu");
+var name2 =Symbol("Himanshu");
+ console.log(name1==name2);
+ //object type == mutable in memory and keeps values in pair
+ //object,fnction,array
+ //object are defined in pair of key and its value
+ let myInfo={
+    name:"himanshu",
+    age:18,
+    isMarried:false,
+    mob:8400339464,
+    add:null,
+    branch:"CSE",
+    section:15
+
+ };
+ console.log(myInfo);
+console.log(myInfo.name);// access object key i.e name
+let keys =Object.keys(myInfo);
+console.log("my info object length "+keys.length);
+//function---the reusbale block of code used to perform some specific task
+function cal(){
+    var num1=45;
+    var num2=46;
+    var res=num1+num2;
+    console.log("addition of two number"+ res);
+       console.log(typeof(cal));
+};
+cal();
+//array collection of any data types in JS
+
+//similar data types
+let vikasInfo = ["Raju",23,false,null,"cse",18];
+ console.log(vikasInfo[1]);
+console.log(typeof(vikasInfo));
+//to iterate array numbers
+for(let i =0;i<vikasInfo.length;i++){
+console.log(vikasInfo[i]);
+};
+
+    
+
+    </script>
+</body>
+</html>

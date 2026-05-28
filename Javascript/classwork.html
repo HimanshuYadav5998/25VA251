@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Average Marks</title>
+</head>
+
+<body>
+
+<script>
+
+let total = 0;
+let subjectMarks = [23,45,67,78,89,56];
+//loop to calculate the total marks of the subjects
+// loop to print the grade multiple time until  array index met;
+for (let i = 0; i < subjectMarks.length; i++) {
+
+    let mark = subjectMarks[i];
+    total += mark;
+
+    if (mark <= 100 && mark > 90) {
+        console.log("Grade A is awarded for marks:", mark);
+    } 
+    else if (mark <= 90 && mark > 70) {
+        console.log("Grade B is awarded for marks:", mark);
+    } 
+    else if (mark <= 70 && mark > 50) {
+        console.log("Grade C is awarded for marks:", mark);
+    } 
+    else if (mark <= 50 && mark > 30) {
+        console.log("Grade D is awarded for marks:", mark);
+    } 
+    else {
+        console.log("Grade F is awarded for marks:", mark);
+    }
+
+}
+// printing the average numbers
+let average = total / subjectMarks.length;
+console.log("Average Marks:", average);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+<!-- Javascript is a cross platform object based scripting language for client and server application it is used everywhere.
+ interpreted at just in time compilation(runtime) rather than compile time -->
+ <!-- High level and multi paradigm -->
+<!-- loosely typed language -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+</head>
+<body>
+    <h2>Java Script</h2>
+    <script>
+
+        // JS Variable --- container that keeps either values or not
+        //JavaScript variables are named containers for storing data values that can be used and modified throughout a program. They are declared using the keywords var, let, or const, with let and const being the recommended choices for modern JavaScript.
+
+        var myName="ABES";
+
+        //In JavaScript, document is a built-in object that represents the web page currently loaded in the browser. It serves as the primary entry point to the page's content, allowing you to access, modify, and manage the structure, style, and data of an HTML or XML document. 
+        
+        document.write(myName);//output for browser
+        
+        console.log(myName); //output on console window
+        // JS Executionb and sxope in JA (Global and local[block])
+       
+        function hello(){
+            var msg="Thanks to Visit !!";
+            console.log(msg); //output on console //local or block
+        }
+        hello();
+
+        //variable declration using let and const
+
+let myRollno=202501010240;
+console.log(myRollno);
+
+ myRollno=202501010241; //no re declare but can reassigned
+console.log(myRollno);
+
+const myPhoneno=44423432323;
+console.log(myPhoneno); // no re declare no re assigned
+
+ //myPhoneno=34534;
+//console.log(myPhoneno);
+
+//In JavaScript, the primary differences between var, let, and const lie in their scope, reassignment capabilities, and hoisting behaviour. 
+    </script>
+</body>
+</html>
+
