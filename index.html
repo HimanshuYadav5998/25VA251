@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temperature Converter</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #0f172a;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+input {
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 80%;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.convert-btn {
+    background: #2563eb;
+}
+
+.clear-btn {
+    background: #dc2626;
+}
+
+select {
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 85%;
+}
+
+#result {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4f46e5;
+    margin-top: 10px;
+}
+
+#formula {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+
+<div class="card">
+
+    <h2>Enter Temperature</h2>
+
+    <input type="number"
+    id="tempInput"
+    placeholder="Enter temperature value">
+
+    <br>
+
+    <select id="fromUnit">
+        <option value="celsius">Celsius (°C)</option>
+        <option value="fahrenheit">Fahrenheit (°F)</option>
+        <option value="kelvin">Kelvin (K)</option>
+    </select>
+
+    <br>
+
+    <select id="toUnit">
+        <option value="fahrenheit">Fahrenheit (°F)</option>
+        <option value="celsius">Celsius (°C)</option>
+        <option value="kelvin">Kelvin (K)</option>
+    </select>
+
+    <br><br>
+
+    <button class="convert-btn" onclick="convertTemperature()">
+        Convert
+    </button>
+
+    <button class="clear-btn" onclick="clearFields()">
+        Clear
+    </button>
+
+</div>
+
+<div class="card">
+
+    <h2>Result</h2>
+
+    <div id="result">--</div>
+    <p id="formula"></p>
+
+</div>
+
+</div>
+
+<script src="index.jsx"></script>
+
+</body>
+</html>
